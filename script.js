@@ -2,8 +2,14 @@
     "use strict";
 
     // Get all the questions from the JSON file
-    var request = $.getJSON("https://github.com/DabideBoi/quiz-app/blob/main/questions.json");
-
+    var request = $.ajax({
+        url: 'questions.js',
+        dataType: 'jsonp',
+        jsonpCallback: 'jsonpCallback',
+        success: function(data) {
+          console.log(data);
+        }
+      });
     // if (request != null)
     // {
     //     // JSONP wrapping:
