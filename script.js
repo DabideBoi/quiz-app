@@ -13,7 +13,7 @@
     //     JSON.parse(module3),
     //     JSON.parse(module4));
 
-    // var request = JSON.stringify(request);
+    // var request = JSON.stringify(request);s
 
     var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
 
