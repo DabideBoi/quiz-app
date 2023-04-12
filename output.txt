@@ -1,0 +1,124 @@
+How many unique values are possible using a single binary digit?1248916Answers Explanation & Hints:A bit is stored and transmitted as one of two possible discrete states. Each bit can only have one of two possible values, 0 or 1. The term bit is an abbreviation of “binary digit” and represents the smallest piece of data.
+1
+2
+4
+8
+9
+16Answers Explanation & Hints:A bit is stored and transmitted as one of two possible discrete states. Each bit can only have one of two possible values, 0 or 1. The term bit is an abbreviation of “binary digit” and represents the smallest piece of data.
+What terms represent the maximum and actual speed that can be utilized by a device to transfer data?bandwidth; throughputthroughput; bandwidthbandwidth; goodputthroughput; goodputAnswers Explanation & Hints:Bandwidth measures the maximum rate at which a device can transfer data. However, in practice, the actual speed for data transfer could be reduced because of numerous factors like network congestion, overhead etc. This actual rate of transfer is known as throughput.
+bandwidth; throughput
+throughput; bandwidth
+bandwidth; goodput
+throughput; goodputAnswers Explanation & Hints:Bandwidth measures the maximum rate at which a device can transfer data. However, in practice, the actual speed for data transfer could be reduced because of numerous factors like network congestion, overhead etc. This actual rate of transfer is known as throughput.
+Which factor classifies a host as a server?the CPU speedthe software installedthe amount of memorythe network connectionAnswers Explanation & Hints:A server is a host with server software installed. Although CPU, memory, and the network connection will determine the performance of a server, it is the server software that provides desired server services.
+the CPU speed
+the software installed
+the amount of memory
+the network connectionAnswers Explanation & Hints:A server is a host with server software installed. Although CPU, memory, and the network connection will determine the performance of a server, it is the server software that provides desired server services.
+Match the term to the value represented.Modules 1 – 4 Internet Connection Getting Online Group Exam Answers 001
+Which term is used to describe a network device that relies on another device to obtain information?web serverconsoleserverclientAnswers Explanation & Hints:A client device has software installed which enables it to request the required service from a server device. For instance, a user who uses a web browser is effectively requesting pages from servers all over the web. In this case the browser is considered the client, whereas the device that is responsible for answering the request is considered the server.
+web server
+console
+server
+clientAnswers Explanation & Hints:A client device has software installed which enables it to request the required service from a server device. For instance, a user who uses a web browser is effectively requesting pages from servers all over the web. In this case the browser is considered the client, whereas the device that is responsible for answering the request is considered the server.
+What is a disadvantage of deploying a peer-to-peer network model?difficulty of setuplack of centralized administrationhigh degree of complexityhigh costAnswers Explanation & Hints:The simplest peer-to-peer network consists of two computers that are directly connected to each other through the use of a wired or wireless connection. The primary disadvantages of a peer-to-peer network are its lack of central administration, minimal security, and its lack of scalability.
+difficulty of setup
+lack of centralized administration
+high degree of complexity
+high costAnswers Explanation & Hints:The simplest peer-to-peer network consists of two computers that are directly connected to each other through the use of a wired or wireless connection. The primary disadvantages of a peer-to-peer network are its lack of central administration, minimal security, and its lack of scalability.
+A user is looking for a wireless headphone for listening to songs stored on a smartphone. What wireless technology would the headphone use?3G/4GWi-FiinfraredBluetoothAnswers Explanation & Hints:Bluetooth is a wireless technology for data exchange over a short distance. It is suitable for connecting devices with simple tasks, such as headsets, keyboards, mice, and printers. Wi-Fi is suitable for variety of applications with high speed wireless connectivity required or preferred. Infrared requires a direct line of sight between the transmitter and the receiver. 3G/4G are cellular network technologies to manage voice calls and data transmission between clients and service providers.
+3G/4G
+Wi-Fi
+infrared
+BluetoothAnswers Explanation & Hints:Bluetooth is a wireless technology for data exchange over a short distance. It is suitable for connecting devices with simple tasks, such as headsets, keyboards, mice, and printers. Wi-Fi is suitable for variety of applications with high speed wireless connectivity required or preferred. Infrared requires a direct line of sight between the transmitter and the receiver. 3G/4G are cellular network technologies to manage voice calls and data transmission between clients and service providers.
+A consumer places a smartphone close to a pay terminal at a store and the shopping charge is successfully paid. Which type of wireless technology was used?BluetoothNFCWi-Fi3GAnswers Explanation & Hints:NFC is a wireless technology that allows data to be exchanged between devices that are in very close proximity to each other.
+Bluetooth
+NFC
+Wi-Fi
+3GAnswers Explanation & Hints:NFC is a wireless technology that allows data to be exchanged between devices that are in very close proximity to each other.
+Which type of network component can be used to share an attached printer to the network?personal computerperipheralaccess pointnetwork mediaAnswers Explanation & Hints:A peripheral is a device that is not directly connected to a network. In order to be made available on a network, a host is responsible for sharing the peripheral across the network.
+personal computer
+peripheral
+access point
+network mediaAnswers Explanation & Hints:A peripheral is a device that is not directly connected to a network. In order to be made available on a network, a host is responsible for sharing the peripheral across the network.
+A wireless network was recently installed in a coffee shop and customer mobile devices are not receiving network configuration information. What should be done to correct the problem?Check the connection of the DNS server to the Internet.Provide peripheral devices to customers.Make sure the DHCP server is functional.Ensure that the default gateway device is working properly.Answers Explanation & Hints:End-user devices can request an address from a pool of addresses that are maintained by a DHCP server.
+Check the connection of the DNS server to the Internet.
+Provide peripheral devices to customers.
+Make sure the DHCP server is functional.
+Ensure that the default gateway device is working properly.Answers Explanation & Hints:End-user devices can request an address from a pool of addresses that are maintained by a DHCP server.
+Which network device is used to translate a domain name to the associated IP address?routerDNS serverDHCP serverdefault gatewayAnswers Explanation & Hints:A DNS server is a network device that is used to translate a domain name to its IP address. A user will identify a website using a domain name, such as www.cisco.com and a DNS server will translate it to an associated IP address.
+router
+DNS server
+DHCP server
+default gatewayAnswers Explanation & Hints:A DNS server is a network device that is used to translate a domain name to its IP address. A user will identify a website using a domain name, such as www.cisco.com and a DNS server will translate it to an associated IP address.
+If you were drawing a physical topology of your school network, what type of information would you include?how devices are connectedthe location of devices in the buildingthe path that data takes to reach destinationsthe IP addresses of all devices on the networkAnswers Explanation & Hints:A physical topology is a diagram that shows where all the devices are physically located in the building.
+how devices are connected
+the location of devices in the building
+the path that data takes to reach destinations
+the IP addresses of all devices on the networkAnswers Explanation & Hints:A physical topology is a diagram that shows where all the devices are physically located in the building.
+Refer to the exhibit. An instructor wants to show a few prebuilt Packet Tracer sample labs in class. Which menu option would the instructor use to access a sample lab?Modules 1 – 4 Internet Connection Getting Online Group Exam Answers 01FileEditOptionsViewToolsExtensionsAnswers Explanation & Hints:Use the File > Open Samples menu option to browse for the samples provided with Packet Tracer.
+File
+Edit
+Options
+View
+Tools
+ExtensionsAnswers Explanation & Hints:Use the File > Open Samples menu option to browse for the samples provided with Packet Tracer.
+When authenticating within Packet Tracer, which two items could you use? (Choose two.)a previously configured PINa previously configured patterna username associated with NetAcada username associated with a specific schoolan email address found in the NetAcad profileAnswers Explanation & Hints:When Packet Tracer first opens, an authentication screen appears. Use the email address in the NetAcad profile or a username associated with NetAcad.
+a previously configured PIN
+a previously configured pattern
+a username associated with NetAcad
+a username associated with a specific school
+an email address found in the NetAcad profileAnswers Explanation & Hints:When Packet Tracer first opens, an authentication screen appears. Use the email address in the NetAcad profile or a username associated with NetAcad.
+Refer to the exhibit. A student has started a Packet Tracer network that includes a home wireless router to be used for both wired and wireless devices. The router and laptop have been placed within the logical workspace. The student clicks on the laptop and the window that opens is shown in the exhibit. What is the purpose of the modules on the left?Modules 1 – 4 Internet Connection Getting Online Group Exam Answers 02This is the list of modules currently installed in the laptop.These are optional modules that can be installed into the module slot if it is currently empty.These are modules that can be used by double-clicking on one module so that it automatically installs into the laptop.This is a list of modules available from the manufacturer that can be clicked on and “purchased.”Answers Explanation & Hints:Modules on the left can be installed into the shown device, in this case a laptop. Be sure to power the device off before installing any option.
+This is the list of modules currently installed in the laptop.
+These are optional modules that can be installed into the module slot if it is currently empty.
+These are modules that can be used by double-clicking on one module so that it automatically installs into the laptop.
+This is a list of modules available from the manufacturer that can be clicked on and “purchased.”Answers Explanation & Hints:Modules on the left can be installed into the shown device, in this case a laptop. Be sure to power the device off before installing any option.
+Refer to the exhibit. A student is creating a wired and wireless network in Packet Tracer. After inserting a router, switch, and PC, the student chooses a straight-through cable to connect the PC to the switch. Which connection would be the best port for the student to choose on the PC?Modules 1 – 4 Internet Connection Getting Online Group Exam Answers 04RS 232USB0USB1FastEthernet0Answers Explanation & Hints:A PC to switch connection is through an Ethernet cable. Connect FastEthernet0 on the PC to any Ethernet port on the switch.
+RS 232
+USB0
+USB1
+FastEthernet0Answers Explanation & Hints:A PC to switch connection is through an Ethernet cable. Connect FastEthernet0 on the PC to any Ethernet port on the switch.
+Refer to the exhibit. Which menu item would be used to bring up a command prompt environment to be able to ping another network device?Modules 1 – 4 Internet Connection Getting Online Group Exam Answers 03PhysicalConfigDesktopProgrammingAttributesAnswers Explanation & Hints:The Desktop menu item is used to access common applications and windows used to configure a device such as the IP address, command prompt, web browser, as well as other apps.
+Physical
+Config
+Desktop
+Programming
+AttributesAnswers Explanation & Hints:The Desktop menu item is used to access common applications and windows used to configure a device such as the IP address, command prompt, web browser, as well as other apps.
+Refer to the exhibit. A home wireless network is being configured within Packet Tracer. The user adds a wireless router, a PC, and three laptops. The user is reviewing the wireless connection on one of the laptops. What can be determined?Modules 1 – 4 Internet Connection Getting Online Group Exam Answers 05Because the password is not enabled, the laptop cannot connect to the wireless router.All three laptops are connected to the wireless network successfully.The laptop is connected to a wireless network.The laptop must have a different wireless NIC installed before being able to connect to the wireless router.Answers Explanation & Hints:A home wireless router could be configured for a 2.4 GHz and multiple 5 GHz wireless networks, each with a unique SSID such as QuizMe3, QuizMe2, and QuizMe. The wireless NIC is active and connected to a wireless network as indicated by the words Adapter is Active. The wireless router has not been configured with wireless security.
+Because the password is not enabled, the laptop cannot connect to the wireless router.
+All three laptops are connected to the wireless network successfully.
+The laptop is connected to a wireless network.
+The laptop must have a different wireless NIC installed before being able to connect to the wireless router.Answers Explanation & Hints:A home wireless router could be configured for a 2.4 GHz and multiple 5 GHz wireless networks, each with a unique SSID such as QuizMe3, QuizMe2, and QuizMe. The wireless NIC is active and connected to a wireless network as indicated by the words Adapter is Active. The wireless router has not been configured with wireless security.
+Which type of network cable is commonly used to connect office computers to the local network?coaxial cabletwisted-pair cableglass fiber-optic cableplastic fiber-optic cableAnswers Explanation & Hints:Twisted-pair is a type of copper cable used to interconnect devices on a local network.
+coaxial cable
+twisted-pair cable
+glass fiber-optic cable
+plastic fiber-optic cableAnswers Explanation & Hints:Twisted-pair is a type of copper cable used to interconnect devices on a local network.
+Which criterion can be used to select the appropriate type of network media for a network?the types of data that need to be prioritizedthe cost of the end devices that are used in the networkthe number of intermediary devices that are installed in the networkthe environment where the selected medium is to be installedAnswers Explanation & Hints:Criteria for choosing a network medium are the distance across which the selected medium can successfully carry a signal, the environment in which the selected medium is to be installed, the amount of data and the speed at which the data must be transmitted, and the cost of the medium and its installation.
+the types of data that need to be prioritized
+the cost of the end devices that are used in the network
+the number of intermediary devices that are installed in the network
+the environment where the selected medium is to be installedAnswers Explanation & Hints:Criteria for choosing a network medium are the distance across which the selected medium can successfully carry a signal, the environment in which the selected medium is to be installed, the amount of data and the speed at which the data must be transmitted, and the cost of the medium and its installation.
+What are two sources of electromagnetic interference that can affect data transmissions? (Choose two.)LED monitormicrowave oveninfrared remote controlcordless phoneflorescent light fixtureAnswers Explanation & Hints:Electromagnetic interference or EMI is commonly caused by equipment such as microwave ovens and fluorescent light fixtures.
+LED monitor
+microwave oven
+infrared remote control
+cordless phone
+florescent light fixtureAnswers Explanation & Hints:Electromagnetic interference or EMI is commonly caused by equipment such as microwave ovens and fluorescent light fixtures.
+What are two advantages of using fiber-optic cabling to interconnect devices? (Choose two.)Fiber-optic cable is immune from EMI and RFI.Fiber-optic cables can extend several miles.Fiber-optic cables use extra shielding to protect copper wires.Fiber-optic cables are easy to install..Fiber-optic cables are commonly found in both homes and small businesses.Answers Explanation & Hints:Fiber-optic cables provide immunity to both EMI and RFI and a single cable can extend for several miles before regeneration is needed.
+Fiber-optic cable is immune from EMI and RFI.
+Fiber-optic cables can extend several miles.
+Fiber-optic cables use extra shielding to protect copper wires.
+Fiber-optic cables are easy to install..
+Fiber-optic cables are commonly found in both homes and small businesses.Answers Explanation & Hints:Fiber-optic cables provide immunity to both EMI and RFI and a single cable can extend for several miles before regeneration is needed.
+Which type of network cable is used to connect the components that make up satellite communication systems?coaxialfiber-opticshielded twisted-pairunshielded twisted-pairAnswers Explanation & Hints:Coaxial cable is commonly used to connect the various components that make up satellite communication systems and cable TV.
+coaxial
+fiber-optic
+shielded twisted-pair
+unshielded twisted-pairAnswers Explanation & Hints:Coaxial cable is commonly used to connect the various components that make up satellite communication systems and cable TV.
+Which statement describes the use of the ping command?The ping command tests end-to-end connectivity between two devices.The ping command can be used to determine the exact location of the problem when troubleshooting reachability issues.The ping command can be used to test reachability using the physical address of the device.The ping command shows current Layer 4 sessions.Answers Explanation & Hints:The ping command is used to test end-to-end connectivity between the source and destination IP address. It measures the time it takes a test message to make a round trip between the two end points. However, if the message does not reach the destination, or in the case of delays, there is no way to determine where the problem is located.
+The ping command tests end-to-end connectivity between two devices.
+The ping command can be used to determine the exact location of the problem when troubleshooting reachability issues.
+The ping command can be used to test reachability using the physical address of the device.
+The ping command shows current Layer 4 sessions.Answers Explanation & Hints:The ping command is used to test end-to-end connectivity between the source and destination IP address. It measures the time it takes a test message to make a round trip between the two end points. However, if the message does not reach the destination, or in the case of delays, there is no way to determine where the problem is located.

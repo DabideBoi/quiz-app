@@ -1,0 +1,14 @@
+[
+    {"question": "When using thecpcommand, you must provide both a source and a destination.", "options": ["True", "False"], "correctAnswer": "True"}, 
+    {"question": "Which option(s) can be used to preventcpfrom overwriting an existing file?", "options": ["-z", "-n", "-N", "-i"], "correctAnswer": "-z"}, 
+    {"question": "The commandrm -rwill\u2026", "options": ["remove a directory along with any files or subdirectories.", "generate an error; -r isn\u2019t a valid option.", "remove only empty directories.", "prompt for each confirmation before deleting each file in a directory."], "correctAnswer": "remove a directory along with any files or subdirectories."}, 
+    {"question": "Which option can be used with thermcommand to prompt before deleting?", "options": ["A", "-P", "l", "-i"], "correctAnswer": "A"}, 
+    {"question": "Thermcommand can delete multiple files at once.", "options": ["True", "False"], "correctAnswer": "True"}, 
+    {"question": "Which of the following commands can be used to rename a file?", "options": ["cp", "rm", "mv", "name"], "correctAnswer": "cp"}, 
+    {"question": "Thetouchcommand can be used to:", "options": ["Update the timestamp of existing files", "Change ownership of a file", "Create new files", "Change a file\u2019s name"], "correctAnswer": "Update the timestamp of existing files"}, 
+    {"question": "Which of the following are glob characters?", "options": ["The square brackets \u201c[\u201d and \u201c]\u201d", "The question mark \u201c?\u201d", "The dash character \u201c-\u201c", "The asterisk \u201c*\u201d"], "correctAnswer": "The square brackets \u201c[\u201d and \u201c]\u201d"}, 
+    {"question": "The main purpose of using glob characters is to be able to provide a list of filenames to a command.", "options": ["True", "False"], "correctAnswer": "True"}, {"question": "The asterisk character is used to represent zero or more of any character in a filename.", "options": ["True", "False"], "correctAnswer": "True"}, 
+    {"question": "Which of these commands will return/etc/gai.conf /etc/pam.conf /etc/ucf.conf?", "options": ["ls /etc/???.????", "echo /etc/???.*f", "echo /etc/*?.*o?", "ls /etc/p???.**"], "correctAnswer": "ls /etc/???.????"}, 
+    {"question": "Brackets cannot be used to a represent a range of characters.", "options": ["True", "False"], "correctAnswer": "True"}, 
+    {"question": "Which command would list files that do not begin with a \u201cT\u201d or a \u201cW\u201d?", "options": ["echo /etc/*[TW!]", "echo /etc/!TW", "echo /etc/[!TW]*", "echo /etc/[*TW]!"], "correctAnswer": "echo /etc/*[TW!]"}
+]
