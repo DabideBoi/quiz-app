@@ -3,9 +3,10 @@
 
     // Define an object that maps category names to the URL of the corresponding JSON file
     var categoryMap = {
-        "General Knowledge": "https://example.com/questions/general-knowledge.json",
-        "Science": "https://example.com/questions/science.json",
-        "History": "https://example.com/questions/history.json"
+        "Module 1": "https://dabideboi.github.io/json/mod1-4.json",
+        "Module 5": "https://dabideboi.github.io/json/mod5-8.json",
+        "Module 9": "https://dabideboi.github.io/json/mod9-12.json",
+        "Module Uhhh": "https://dabideboi.github.io/json/questions.json"
     };
 
     // Create a dropdown menu to let the user choose a category
@@ -40,6 +41,27 @@
 
             // When the request to the questions.json file is complete
             request.done(function(questions) {
+
+                // Extract the list of categories from the questions
+                var categories = questions.map(function(question) {
+                  return question.category;
+                });
+            
+                // Remove duplicate categories
+                categories = categories.filter(function(category, index, self) {
+                  return self.indexOf(category) === index;
+                });
+            
+                // Compile the category dropdown template
+                var template = Handlebars.compile($(Quiz.config.categoryDropdownTemplateEl).html());
+            
+                var context = {
+                  categories: categories
+                };
+            
+                // Render the category dropdown menu
+                $(Quiz.config.categoryDropdownContainerEl).html(template(context));
+
                 // If they reached the final question of the quiz
                 // Calculate their final score
                 if (Quiz.currentIndex + 1 > questions.length) {
@@ -99,6 +121,16 @@
 
             $(Quiz.config.quizEl).html(template(context));
         },
+
+        renderDropDown: function(dropDownE1) {
+            var template = Handlebars.compile($(dropDownE1).html());
+            var context = {
+                totalScore:      Quiz.currentScore,
+                questionsLength: questions.length   
+            };
+
+            $(Quiz.config.quizEl).html(template(context));
+        }
     };
 
 
@@ -112,7 +144,7 @@
         choicesEl:              "#choices",
         finalScoreTemplateEl:   "#finalScore-template",
         quizEl:                 "#quiz",
-        moduleWheelE1:          "#questionWheel-template"
+        dropDownE1:             "#dropDown-template"
     });
 
     // Passing the questions as a parameter so it's available to the handleQuestion method

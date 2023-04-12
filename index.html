@@ -23,6 +23,7 @@
         <div id="quiz" class="card mx-auto">
             <div id="question-title"></div>
             <div id="choices"></div>
+            <div id="dropdown-menu"></div>
             <button id="next-question" class="btn btn-primary">Next Question</button>
         </div>
     </div>
@@ -46,15 +47,13 @@
         <h2 id="finalScore">You've scored {{ totalScore }} out of {{ questionsLength }}!</h2>
     </script>
 
-    <script id="questionWheel-template" type="text/x-handlebars-template">
-        <div class="card mx-auto">
-            {{#each choices}}
-            <div class="choice">
-                <input type="radio" name="choices" id="choice{{@index}}" value="{{@index}}">
-                <label for="choice{{@index}}">{{ @this }}</label>
-            </div>
-            {{/each}}
-        </div>
+    <script id="category-dropdown-template" type="text/x-handlebars-template">
+        <label for="category-dropdown">Select a category:</label>
+        <select id="category-dropdown">
+          {{#each categories}}
+          <option value="{{this}}">{{this}}</option>
+          {{/each}}
+        </select>
     </script>
 
     <!-- Scripts -->
