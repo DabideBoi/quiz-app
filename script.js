@@ -1,10 +1,10 @@
- import data from "https://dabideboi.github.io/json/questions.json" assert { type: 'JSON' };
+//  import data from "https://dabideboi.github.io/quiz-app/json/questions.json" assert { type: 'JSON' };
 
 (function($, Handlebars) {
     "use strict";
 
     // Get all the questions from the JSON file
-    var request = data;
+    var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
 
     // var request = $.getJSON("https://cors-anywhere.herokuapp.com/http://DabideBoi.github.io/questions.json", function(data) {
     //     console.log(data);
