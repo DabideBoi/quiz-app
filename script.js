@@ -144,7 +144,7 @@
         choicesEl:                               "#choices",
         finalScoreTemplateEl:                    "#finalScore-template",
         quizEl:                                  "#quiz",
-        categoryDropdownContainerEl:             "#category-dropdown-template"
+        categoryDropdownContainerEl:             "#category-dropdown-container"
     });
 
     // Passing the questions as a parameter so it's available to the handleQuestion method
