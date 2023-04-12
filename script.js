@@ -2,7 +2,19 @@
     "use strict";
 
     // Get all the questions from the JSON file
-    var request = $.getJSON("questions.json");
+    var request = $.getJSON("https://github.com/DabideBoi/quiz-app/blob/main/questions.json");
+
+    // if (request != null)
+    // {
+    //     // JSONP wrapping:
+    //     response.getWriter().write(request + "(" + stringWriter.toString() + ")");
+    //     System.out.println(request + "(" + stringWriter.toString() + ")");
+    // }
+    // else
+    // {
+    //     response.getWriter().write(stringWriter.toString());
+    //     System.out.println(stringWriter.toString());
+    // }
 
     var Quiz = {
         // Current question index in the array, starting with 0
