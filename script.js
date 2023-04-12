@@ -138,13 +138,13 @@
     // when the element names change for some reason 
     // I don't have to change the whole element names
     Quiz.init({
-        choicesTemplateEl:      "#choices-template",
-        titleTemplateEl:        "#title-template",
-        questionTitleEl:        "#question-title",
-        choicesEl:              "#choices",
-        finalScoreTemplateEl:   "#finalScore-template",
-        quizEl:                 "#quiz",
-        dropDownE1:             "#dropDown-template"
+        choicesTemplateEl:                       "#choices-template",
+        titleTemplateEl:                         "#title-template",
+        questionTitleEl:                         "#question-title",
+        choicesEl:                               "#choices",
+        finalScoreTemplateEl:                    "#finalScore-template",
+        quizEl:                                  "#quiz",
+        categoryDropdownContainerEl:             "#category-dropdown-template"
     });
 
     // Passing the questions as a parameter so it's available to the handleQuestion method
