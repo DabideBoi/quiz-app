@@ -1,31 +1,8 @@
 (function($, Handlebars) {
     "use strict";
 
-    // Define an object that maps category names to the URL of the corresponding JSON file
-    var categoryMap = {
-        "Module 1": "https://dabideboi.github.io/json/mod1-4.json",
-        "Module 5": "https://dabideboi.github.io/json/mod5-8.json",
-        "Module 9": "https://dabideboi.github.io/json/mod9-12.json",
-        "Module Uhhh": "https://dabideboi.github.io/json/questions.json"
-    };
-
-    // Create a dropdown menu to let the user choose a category
-    var categoryDropdown = $("<select>").attr("id", "category-dropdown");
-    for (var categoryName in categoryMap) {
-        $("<option>").attr("value", categoryMap[categoryName]).text(categoryName).appendTo(categoryDropdown);
-    }
-    $(categoryDropdown).appendTo("#category-selector");
-
-    // Define a function to load questions from a specified URL
-    function loadQuestions(url) {
-        return $.getJSON(url);
-    }
-
     // Get all the questions from the JSON file
-    // var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
-    var selectedCategory = $("#category-dropdown").val();
-    var request = loadQuestions(selectedCategory);
-
+    var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
 
     var Quiz = {
         // Current question index in the array, starting with 0
@@ -120,16 +97,6 @@
             };
 
             $(Quiz.config.quizEl).html(template(context));
-        },
-
-        renderDropDown: function(dropDownE1) {
-            var template = Handlebars.compile($(dropDownE1).html());
-            var context = {
-                totalScore:      Quiz.currentScore,
-                questionsLength: questions.length   
-            };
-
-            $(Quiz.config.quizEl).html(template(context));
         }
     };
 
@@ -138,13 +105,12 @@
     // when the element names change for some reason 
     // I don't have to change the whole element names
     Quiz.init({
-        choicesTemplateEl:                       "#choices-template",
-        titleTemplateEl:                         "#title-template",
-        questionTitleEl:                         "#question-title",
-        choicesEl:                               "#choices",
-        finalScoreTemplateEl:                    "#finalScore-template",
-        quizEl:                                  "#quiz",
-        categoryDropdownContainerEl:             "#category-dropdown-container"
+        choicesTemplateEl:      "#choices-template",
+        titleTemplateEl:        "#title-template",
+        questionTitleEl:        "#question-title",
+        choicesEl:              "#choices",
+        finalScoreTemplateEl:   "#finalScore-template",
+        quizEl:                 "#quiz",
     });
 
     // Passing the questions as a parameter so it's available to the handleQuestion method
