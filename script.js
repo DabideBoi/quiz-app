@@ -1,8 +1,30 @@
 (function($, Handlebars) {
     "use strict";
 
+    // Define an object that maps category names to the URL of the corresponding JSON file
+    var categoryMap = {
+        "General Knowledge": "https://example.com/questions/general-knowledge.json",
+        "Science": "https://example.com/questions/science.json",
+        "History": "https://example.com/questions/history.json"
+    };
+
+    // Create a dropdown menu to let the user choose a category
+    var categoryDropdown = $("<select>").attr("id", "category-dropdown");
+    for (var categoryName in categoryMap) {
+        $("<option>").attr("value", categoryMap[categoryName]).text(categoryName).appendTo(categoryDropdown);
+    }
+    $(categoryDropdown).appendTo("#category-selector");
+
+    // Define a function to load questions from a specified URL
+    function loadQuestions(url) {
+        return $.getJSON(url);
+    }
+
     // Get all the questions from the JSON file
-    var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
+    // var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
+    var selectedCategory = $("#category-dropdown").val();
+    var request = loadQuestions(selectedCategory);
+
 
     var Quiz = {
         // Current question index in the array, starting with 0
@@ -76,7 +98,7 @@
             };
 
             $(Quiz.config.quizEl).html(template(context));
-        }
+        },
     };
 
 
@@ -90,6 +112,7 @@
         choicesEl:              "#choices",
         finalScoreTemplateEl:   "#finalScore-template",
         quizEl:                 "#quiz",
+        moduleWheelE1:          "#questionWheel-template"
     });
 
     // Passing the questions as a parameter so it's available to the handleQuestion method
