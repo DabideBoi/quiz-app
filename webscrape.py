@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import json
 
 # Make a request to the website
-url = 'https://infraexam.com/networking-essentials-2-0/networking-essentials-version-2-modules-5-8-network-protocols-and-architecture-group-exam-answers/'
+url = 'https://infraexam.com/networking-essentials-2-0/networking-essentials-version-2-modules-9-12-data-communications-and-network-services-group-exam-answers/'
 response = requests.get(url)
 
 # Parse the HTML content using BeautifulSoup
@@ -17,11 +17,16 @@ data = []
 if ol_tag:
     li_tags = ol_tag.find_all('li')
     for li_tag in li_tags:
-        if "Answers Explanation & Hints:" not in li_tag.get_text():
             try:
                 question = li_tag.find('h3').get_text(strip=True)
                 options = [option.get_text(strip=True) for option in li_tag.find('ul').find_all('li')]
-                correct_answer = options[0]
+                optionionales = []
+                for option in options:
+                    optionionales.append(option.split("Answers Explanation & Hints:")[0].strip())
+                options = optionionales
+                print(li_tag.find('span'))
+                correct_answer_tag = li_tag.find('span')
+                correct_answer = correct_answer_tag.get_text(strip=True)
                 data.append({
                     'question': question,
                     'options': options,
@@ -31,5 +36,5 @@ if ol_tag:
                 print("that one failed")
 
 # Write the data to a file
-with open('mod5-8.json', 'w') as f:
+with open('mod9-12.json', 'w') as f:
     json.dump(data, f)
