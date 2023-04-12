@@ -1,26 +1,8 @@
-//  import data from "https://dabideboi.github.io/quiz-app/json/questions.json" assert { type: 'JSON' };
-
 (function($, Handlebars) {
     "use strict";
 
     // Get all the questions from the JSON file
     var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
-
-    // var request = $.getJSON("https://cors-anywhere.herokuapp.com/http://DabideBoi.github.io/questions.json", function(data) {
-    //     console.log(data);
-    // })
-
-    // if (request != null)
-    // {
-    //     // JSONP wrapping:
-    //     response.getWriter().write(request + "(" + stringWriter.toString() + ")");
-    //     System.out.println(request + "(" + stringWriter.toString() + ")");
-    // }
-    // else
-    // {
-    //     response.getWriter().write(stringWriter.toString());
-    //     System.out.println(stringWriter.toString());
-    // }
 
     var Quiz = {
         // Current question index in the array, starting with 0
