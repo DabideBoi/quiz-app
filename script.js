@@ -2,6 +2,19 @@
     "use strict";
 
     // Get all the questions from the JSON file
+    // var module1 = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
+    // var module2 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod1-4.json");
+    // var module3 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod5-8.json");
+    // var module4 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod1-4.json");
+    
+    // var request = $.extend({}, 
+    //     JSON.parse(module1),
+    //     JSON.parse(module2),
+    //     JSON.parse(module3),
+    //     JSON.parse(module4));
+
+    // var request = JSON.stringify(request);s
+
     var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
 
     var Quiz = {
@@ -18,6 +31,27 @@
 
             // When the request to the questions.json file is complete
             request.done(function(questions) {
+
+                // Extract the list of categories from the questions
+                var categories = questions.map(function(question) {
+                  return question.category;
+                });
+            
+                // Remove duplicate categories
+                categories = categories.filter(function(category, index, self) {
+                  return self.indexOf(category) === index;
+                });
+            
+                // Compile the category dropdown template
+                var template = Handlebars.compile($(Quiz.config.categoryDropdownTemplateEl).html());
+            
+                var context = {
+                  categories: categories
+                };
+            
+                // Render the category dropdown menu
+                $(Quiz.config.categoryDropdownContainerEl).html(template(context));
+
                 // If they reached the final question of the quiz
                 // Calculate their final score
                 if (Quiz.currentIndex + 1 > questions.length) {
