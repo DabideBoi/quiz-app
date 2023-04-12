@@ -2,7 +2,7 @@
     "use strict";
 
     // Get all the questions from the JSON file
-    var request = $.getJSON("https://dabideboi.github.io/quiz-app/questions/questions.json");
+    var request = $.getJSON("https://dabideboi.github.io/quiz-app/questions/module_questions.json");
 
     var Quiz = {
         // Current question index in the array, starting with 0
