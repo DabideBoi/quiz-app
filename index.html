@@ -19,34 +19,36 @@
     </style>
 
 </head>
-<body>
-    <div id="card mx-auto quiz">
-        <div id="question-title"></div>
-        <div id="choices"></div>
-        <button id="next-question" class="button">Next Question</button>
+<body class="d-flex flex-column min-vh-100 justify-content-center align-items-center" >
+    <div class="container h-100 my-auto">
+        <div id="card mx-auto quiz">
+            <div id="question-title"></div>
+            <div id="choices"></div>
+            <button id="next-question" class="btn btn-primary">Next Question</button>
+        </div>
     </div>
 
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-<script type="module" src="https://dabideboi.github.io/quiz-app/script.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+    <script type="module" src="https://dabideboi.github.io/quiz-app/script.js"></script>
 
-<!-- Templates  -->
-<script id="choices-template" type="text/x-handlebars-template">
-        {{#each choices}}
-        <div class="choice">
-            <input type="radio" name="choices" id="choice{{@index}}" value="{{@index}}">
-            <label for="choice{{@index}}">{{ @this }}</label>
-        </div>
-        {{/each}}
-</script>
-<script  id="title-template" type="text/x-handlebars-template">
-    {{ title }}
-</script>
+    <!-- Templates  -->
+    <script id="choices-template" type="text/x-handlebars-template">
+            {{#each choices}}
+            <div class="choice">
+                <input type="radio" name="choices" id="choice{{@index}}" value="{{@index}}">
+                <label for="choice{{@index}}">{{ @this }}</label>
+            </div>
+            {{/each}}
+    </script>
+    <script  id="title-template" type="text/x-handlebars-template">
+        {{ title }}
+    </script>
 
-<script  id="finalScore-template" type="text/x-handlebars-template">
-    <h2 id="finalScore">You've scored {{ totalScore }} out of {{ questionsLength }}!</h2>
-</script>
+    <script  id="finalScore-template" type="text/x-handlebars-template">
+        <h2 id="finalScore">You've scored {{ totalScore }} out of {{ questionsLength }}!</h2>
+    </script>
 
 </body>
 </html>
