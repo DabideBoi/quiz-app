@@ -1,11 +1,10 @@
-// import data from 'https://cdn.discordapp.com/attachments/624110762691919882/1095604619729719388/questions.json' assert { type: 'JSON' };
+ import data from "https://dabideboi.github.io/json/questions.json" assert { type: 'JSON' };
 
 (function($, Handlebars) {
-
     "use strict";
 
     // Get all the questions from the JSON file
-    var request = $.getJSON("https://dabideboi.github.io/json/questions.json")
+    var request = data;
 
     // var request = $.getJSON("https://cors-anywhere.herokuapp.com/http://DabideBoi.github.io/questions.json", function(data) {
     //     console.log(data);
