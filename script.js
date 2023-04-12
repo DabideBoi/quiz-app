@@ -2,7 +2,16 @@
     "use strict";
 
     // Get all the questions from the JSON file
-    var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
+    let module1 = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
+    let module2 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod1-4.json");
+    let module3 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod5-8.json");
+    let module4 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod9-12.json");
+
+    var request = $.extend({}, 
+        JSON.parse(module1),
+        JSON.parse(module2),
+        JSON.parse(module3),
+        JSON.parse(module4),);
 
     var Quiz = {
         // Current question index in the array, starting with 0
