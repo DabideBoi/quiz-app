@@ -2,20 +2,20 @@
     "use strict";
 
     // Get all the questions from the JSON file
-    var module1 = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
-    var module2 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod1-4.json");
-    var module3 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod5-8.json");
-    var module4 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod1-4.json");
+    // var module1 = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
+    // var module2 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod1-4.json");
+    // var module3 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod5-8.json");
+    // var module4 = $.getJSON("https://dabideboi.github.io/quiz-app/json/mod1-4.json");
     
-    var request = $.extend({}, 
-        JSON.parse(module1),
-        JSON.parse(module2),
-        JSON.parse(module3),
-        JSON.parse(module4));
+    // var request = $.extend({}, 
+    //     JSON.parse(module1),
+    //     JSON.parse(module2),
+    //     JSON.parse(module3),
+    //     JSON.parse(module4));
 
-    var request = JSON.stringify(request);
+    // var request = JSON.stringify(request);
 
-    // var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
+    var request = $.getJSON("https://dabideboi.github.io/quiz-app/json/questions.json");
 
     var Quiz = {
         // Current question index in the array, starting with 0
