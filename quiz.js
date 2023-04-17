@@ -12,6 +12,21 @@ var span= document.querySelectorAll('span');
 var i=0;
 var score= 0;
 
+function shuffle(array) {
+  let currentIndex = array.length,  randomIndex;
+  // While there remain elements to shuffle.
+  while (currentIndex != 0) {
+    // Pick a remaining element.
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
 //function to display questions
 function displayQuestion(){
     for(var a=0;a<span.length;a++){
@@ -70,6 +85,7 @@ function selectModule(moduleName) {
       }
   i=0;
   core= 0;
+  shuffle(questionBank)
     // Reload the page with the selected module's questions
    //location.reload();
    displayQuestion();
