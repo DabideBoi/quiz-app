@@ -61,10 +61,17 @@ function selectModule(moduleName) {
     questionBank = mod58;
   } else if (moduleName === "mod912") {
     questionBank = mod912;
-  }
+  }else if (moduleName === "AI_quiz1") {
+    questionBank = AI_quiz1;
+  }else if (moduleName === "AI_quiz2") {
+    questionBank = AI_quiz2;
+  }else if (moduleName === "AI_quiz3") {
+      questionBank = AI_quiz3;
+      }
   i=0;
   core= 0;
     // Reload the page with the selected module's questions
+   //location.reload();
    displayQuestion();
 }
 
