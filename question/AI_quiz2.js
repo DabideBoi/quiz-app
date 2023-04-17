@@ -1,5 +1,4 @@
-
-const aimod2 = [
+const AI_quiz2 = [
 	{
         	"question": "It is the complete history of everything that the agent has ever perceived.",
         	"options": [
